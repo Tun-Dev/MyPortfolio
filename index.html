@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>TunzDev</title>
+</head>
+<body>
+    <div class="upper">
+        <a href="#intro">About Me</a>
+        <a href="#projects">Project</a>
+        <a href="index.html"><img src="images/LOGOTUNZ.png" alt=""></a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <div class="words">
+        <h1>Helping you bring your ideas and design to reality.</h1>
+        <h1 class="arrow">^</h1>
+    </div>
+
+    <div class="intro" id="intro">
+        <div class="texts">
+            <h2>Hi, I'm Tungbulu Douye</h2>
+            <h5>I am a front end developer that deals in bringing design to life.</h5>
+
+            <button onclick="myFunction2()" id="buttonText" >Learn More About Me>></button>
+            <p id="AboutMe" style="display: none;">
+                I am also Known as Tunz<br>
+                Coding has been my passion since I started working with computers but i found 
+                myself into building web design/development since 2017. <br>
+                I enjoy creating beautifully designed, intuitive and functional websites. <br>
+                You can check my skills by clicking <a href="index.html#skills">here</a>. <br>
+            </p>
+        </div>
+        <div class="image1">
+            <img src="images/me.jpg" alt="" >
+        </div>
+    </div>
+    <div class="skills" id="skills" data-aos="fade-right" data-aos-duration="2000" >
+        <h1>SKILLS</h1>
+        <div class="allskills">
+            <div class="skill">HTML5<img src="images/html5-brands.png" alt=""></div>
+            <div class="skill">CSS3<img src="images/css3-alt-brands.png" alt=""></div>
+            <div class="skill">JavaScript<img src="images/js-brands.png" alt=""></div>
+            <div class="skill">PHP<img src="images/php-brands.png" alt=""></div>
+            <div class="skill">React<img src="images/react-brands.png" alt=""></div>
+        </div>
+    </div>
+    <div class="projects" id="projects" >
+        <h1>PROJECTS</h1>
+        <div class="project1">
+            <div class="projecttext">
+                <h2>PassDefender</h2>
+                <h5>A web app that stores passwords/notes, but with a different security protocol</h5>
+    
+                <a href="https://passdefenderr.000webhostapp.com/index.html"><p>Visit PassDefender >></p></a>
+            </div>
+            <div class="projectimg">
+                <img src="images/PDLOGO.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact" data-aos="fade-left" data-aos-duration="2000" >
+        <h1>CONTACT</h1>
+        <p>click the mail below to contact me</p>
+        <div class="mail">
+            <img src="images/envelope-regular.png" alt="">
+            <a href="mailto:tungbulupaul@gmail.com"><p>tungbulupaul@gmail.com</p></a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&#169 TunzDev</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(window).scroll(function(){
+        $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+        });
+    </script>
+    <script>
+        function myFunction2(){
+            var text = document.getElementById("AboutMe");
+            if (text.style.display === "none"){
+                text.style.display = "block";
+                buttonText.innerHTML = "Show Less<<";
+            }else{
+                text.style.display = "none";
+                buttonText.innerHTML = "Learn More About Me>>"
+            }
+        }
+    </script>
+</body>
+</html>
