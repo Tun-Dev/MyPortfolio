@@ -437,6 +437,12 @@ h5 {
   .upper img {
     width: 35px;
   }
+
+  .words{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 350px;
+  }
   .intro {
     width: 90%;
     margin: 350px auto;
